@@ -5,6 +5,9 @@ function runAtNextTick(cb) {
   setTimeout(cb, 0);
 }
 
+/**
+ * ControllerRegistry - Holds objects of Controllers
+ */
 class ControllersRegistry {
   static _controllersObjects = {};
 
@@ -22,13 +25,18 @@ class ControllersRegistry {
   };
 }
 
-// Blank class just to introduce a concept of Controller. Other Controllers should extend this class.
+/**
+ * Sort of a Controller interface. Other Controllers should extend this class
+ */
 class Controller {
   constructor() {
     console.log(this.constructor.name);
   }
 }
 
+/**
+ * EventBinder - Reads HTML and binds event listener callbacks.
+ */
 class EventBinder {
   static addEventListeners() {
     Array.prototype.slice.call(document.querySelectorAll('*')).forEach(function (el) {
