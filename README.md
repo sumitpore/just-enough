@@ -81,7 +81,7 @@ In second-last line of the example above, `EventBinder.addEventListeners()` will
 
 `SubmitFormController` needs to know whether form is valid or not before processing the submission. Therefore, it requests for the object of `FormValidatorController` with this line `this.formValidator = ControllersRegistry.getController('FormValidatorController');`
 
-This covers the 95% of usage.
+This covers it!
 
 ## Additional Info
 - If you don't want `EventBinder` to scan entire HTML to register events and would like to register events added on a specific element, you can call
