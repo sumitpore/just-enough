@@ -9,7 +9,7 @@ This super-micro-library contain three concepts
 2. Controllers - UI Controller
 3. EventBinder - Reads HTML and binds event listener callbacks.
 
-CDN Link: https://cdn.jsdelivr.net/gh/sumitpore/just-enough@main/just-enought.js
+CDN Link: https://cdn.jsdelivr.net/gh/sumitpore/just-enough@main/just-enough.js
 
 ## Example
 ```html
